@@ -1,7 +1,3 @@
-![Logo](img/interop.png)
-
-[TOC]
-
 ## Primeira Vez
 #### Introdução
 

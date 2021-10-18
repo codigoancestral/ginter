@@ -1,11 +1,11 @@
 site_name: Guia de Interoperabilidade
 nav:
-    - Home: ''
+    - Justiça Eleitoral: 'index.md'
 plugins:
     - search:
         lang: pt
 theme:
-  name: readthedocs
+  name: material
   language: pt
   favicon: img/logo.png
   features:
