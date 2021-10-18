@@ -1,0 +1,20 @@
+site_name: Guia de Interoperabilidade
+nav:
+    - Home: ''
+plugins:
+    - search:
+        lang: pt
+theme:
+  name: readthedocs
+  language: pt
+  favicon: img/logo.png
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.sections
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+  - js/config.js
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+  - css/index.css
