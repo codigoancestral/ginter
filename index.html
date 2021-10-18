@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Guia de Interoperabilidade</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Guia de Interoperabilidade</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="" href=".">Home</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Guia de Interoperabilidade</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="Logo" src="img/interop.png" /></p>
+<div class="toc">
+<ul>
+<li><a href="#primeira-vez">Primeira Vez</a><ul>
+<li><a href="#introducao">Introdução</a></li>
+<li><a href="#primeiro-passo-criar-os-usuarios">Primeiro passo: Criar os Usuários</a></li>
+<li><a href="#criando-os-usuarios">Criando os Usuários</a></li>
+<li><a href="#criando-os-usuarios-no-ambiente-pje-de-treinamento-ead">Criando os Usuários no Ambiente PJe de Treinamento (EAD)</a></li>
+<li><a href="#criando-os-usuarios-no-ambiente-pje-de-producao">Criando os Usuários no Ambiente PJe de Produção</a></li>
+<li><a href="#acessando-o-pje">Acessando o PJe</a></li>
+</ul>
+</li>
+<li><a href="#dia-a-dia-da-interoperabilidade">Dia a Dia da Interoperabilidade</a><ul>
+<li><a href="#panorama-do-suporte">Panorama do Suporte</a></li>
+<li><a href="#abertura-de-chamados-de-suporte-modelo-padrao">Abertura de Chamados de Suporte (Modelo Padrão)</a></li>
+<li><a href="#resposta-do-usuario-ao-questionamento-do-suporte-do-pje">Resposta do Usuário ao Questionamento do Suporte do PJe</a></li>
+<li><a href="#documentacao-do-mni">Documentação do MNI</a></li>
+<li><a href="#como-criar-expedientes">Como Criar Expedientes</a></li>
+<li><a href="#como-preparar-documentos-para-o-peticionamento-via-mni">Como Preparar Documentos Para o Peticionamento via MNI</a></li>
+<li><a href="#tipos-de-eleicao">Tipos de Eleição</a></li>
+<li><a href="#sigilo-processual">Sigilo Processual</a></li>
+<li><a href="#niveis-de-sigilo-processual">Níveis de Sigilo Processual</a></li>
+<li><a href="#zona-eleitoral-niveis-1-3-e-5">Zona Eleitoral (níveis 1, 3 e 5)</a></li>
+<li><a href="#tribunais-regionais-eleitorais-e-tribunal-superior-eleitoral-niveis-1-3-4-e-5">Tribunais Regionais Eleitorais e Tribunal Superior Eleitoral (níveis 1, 3, 4 e 5)</a></li>
+<li><a href="#recomendacoes">Recomendações</a></li>
+</ul>
+</li>
+<li><a href="#anexos">Anexos</a><ul>
+<li><a href="#exemplos-de-requisicoes-xml-intercomunicacao">Exemplos de Requisições XML - Intercomunicação</a></li>
+<li><a href="#exemplos-de-requisicoes-xml-consultapje">Exemplos de Requisições XML - ConsultaPJe</a></li>
+<li><a href="#exemplo-de-requisicao-xml-documento-assinado-para-entrega-avulsa">Exemplo de Requisição XML - Documento Assinado Para Entrega Avulsa</a></li>
+<li><a href="#guia-enviar-expediente-para-mpepdf">Guia Enviar Expediente Para MPE.pdf</a></li>
+<li><a href="#enderecos-dos-ambientes-do-pje-1g-2g-e-3g-producao">Endereços dos Ambientes do PJe 1g, 2g e 3g – Produção</a></li>
+<li><a href="#enderecos-dos-webservices-intercomunicacao-producao">Endereços dos Webservices Intercomunicação – Produção</a></li>
+<li><a href="#enderecos-dos-webservices-consultapje-producao">Endereços dos Webservices ConsultaPJe – Produção</a></li>
+<li><a href="#enderecos-do-ambiente-e-webservices-pje-1g-ead">Endereços do Ambiente e Webservices PJe 1g – EAD</a></li>
+<li><a href="#enderecos-do-ambiente-e-webservices-pje-2g-ead">Endereços do Ambiente e Webservices PJe 2g – EAD</a></li>
+<li><a href="#enderecos-do-ambiente-e-webservices-pje-3g-ead">Endereços do Ambiente e Webservices PJe 3g – EAD</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="primeira-vez">Primeira Vez</h2>
+<h4 id="introducao">Introdução</h4>
+<p>A integração entre sistemas, por meio da tecnologia “WebService”, garante a integridade, inviolabilidade e segurança dos processos judiciais, inclusive quanto ao sigilo processual, quando houver. O intercâmbio de dados é independente de implementações existentes em cada órgão ou instituições públicas ou privadas, podendo ser acessado por pessoas físicas, jurídicas ou entidades.</p>
+<p>O Modelo Nacional de Interoperabilidade (MNI) representa o padrão para troca de informações processuais e estabelece as bases para o intercâmbio de informações de processos judiciais e assemelhados entre os diversos órgãos de administração da Justiça no âmbito do Poder Judiciário. O MNI foi implementado e é mantido pelo Conselho Nacional de Justiça.</p>
+<p>Aos interessados em utilizar o MNI do PJe, cabe realizar as seguintes etapas:</p>
+<p>Implementar as operações detalhadas do MNI em seus respectivos sistemas;
+Solicitar ao TSE a criação dos vários perfis de usuários no PJe;
+Consumir os serviços do webservice da instalação do PJe.</p>
+<h4 id="primeiro-passo-criar-os-usuarios">Primeiro passo: Criar os Usuários</h4>
+<p>O primeiro passo para realizar a integração entre os sistemas é entender o papel dos diversos usuários a serem criados no PJe e reunir os dados necessários para que se possa criá-los no ambiente de testes daquela aplicação.</p>
+<p>Basicamente será necessário criar três perfis de usuários:</p>
+<p>a) Usuário MNI (somente um usuário por instituição externa);</p>
+<p>b) Usuário Procurador/Gestor (um ou vários);</p>
+<p>c) Usuário Servidor de Cartório (dois usuários, um na capital e um no interior).</p>
+<p>A criação desses usuários é realizada pelo Tribunal Superior Eleitoral utilizando-se os dados fornecidos pela instituição externa.</p>
+<p>O papel de cada usuário e os dados necessários para a criação deles são os seguintes:</p>
+<p><strong>a) Usuário de Interoperabilidade MNI</strong></p>
+<p>Este é o usuário utilizado para a efetiva interoperabilidade técnica entre os sistemas da instituição externa e o PJe da Justiça Eleitoral.</p>
+<p>No Pje (lado da Justiça Eleitoral na integração), o usuário de interoperabilidade MNI é criado com o perfil de Procurador/Gestor, perfil esse necessário para realizar-se a maioria das operações implementadas pelo protocolo MNI.</p>
+<p>Para criar o usuário de interoperabilidade MNI, necessita-se de um CPF válido de Servidor/Procurador/Promotor/Policial da instituição externa. Este CPF será utilizado pela equipe de desenvolvimento de sistemas da instituição externa para ser inserido no código fonte do sistema que irá interoperar com o Pje (lado da instituição externa na integração).</p>
+<p>A principal particularidade que deve-se ter em mente acerca do usuário de interoperabilidade MNI é que sua senha será definida pela equipe de desenvolvimento da instituição externa e portanto obviamente essa será de conhecimento da mesma, que a utilizará no código-fonte do sistema que irá interoperar com o PJe.</p>
+<p>Em função disso recomendamos que esse CPF não seja de pessoa que irá utilizar o PJe para a prática de atos processuais.</p>
+<p>Os dados necessários para criar o usuário de interoperabilidade MNI são:</p>
+<ul>
+<li>CPF válido de Servidor/Procurador/Promotor/Policial da instituição externa (somente um);</li>
+<li>E-mail (recomenda-se que esse e-mail seja de pessoa ou lista de discussão ligada a área de desenvolvimento de sistemas da instituição externa, pois é para esse email que o PJe envia o link para definição e redefinição de senha).</li>
+</ul>
+<p><strong>b) Usuário com perfil de Procurador/Gestor</strong></p>
+<p>O usuário Procurador/Gestor atua nos processos distribuídos para a sua Procuradoria. Pode-se ter um ou vários usuários com esse perfil no Pje. A quantidade de usuários a ser criada fica a critério da instituição externa.</p>
+<p>Observação Importante: Os CPFs dos usuários Procuradores/Gestores devem ser diferentes do CPF do usuário MNI.</p>
+<p>Os dados necessários para criar o usuário de interoperabilidade MNI são:</p>
+<ul>
+<li>CPF válido de Servidor/Procurador/Promotor/Policial da instituição externa;</li>
+<li>E-mail</li>
+</ul>
+<p><strong>Observação:</strong> Existindo usuários da instituição externa com o perfil de Procurador/Gestor já criados no Pje, não é necessário fazer esse procedimento novamente.</p>
+<p><strong>c) Usuário com perfil de Servidor de Cartório</strong></p>
+<p>Usuário lotado numa Zona Eleitoral que cria e atua nos processos da sua ZE. Serão criados até dois usuários com o perfil de Servidor de Cartório por instituição externa.</p>
+<p>A Zona Eleitoral na qual o usuário Servidor de Cartório será lotado deve ser previamente escolhida pela instituição externa e informada ao TSE.</p>
+<p>Pode ser qualquer Zona Eleitoral da capital ou do interior. Ex.: 015ª ZONA ELEITORAL DO RIO DE JANEIRO RJ.</p>
+<p><strong>Observação:</strong> Os CPFs dos usuários com perfil de Servidor de Cartório devem ser diferentes dos CPFs do usuário MNI e dos usuários com perfil de Procuradores/Gestores.</p>
+<p>Os dados necessários para criar o usuário Servidor de Cartório são:</p>
+<ul>
+<li>CPF válido de Servidor/Procurador/Promotor/Policial da instituição externa;</li>
+<li>E-mail</li>
+<li>Número e nome da Zona Eleitoral na qual deseja-se lotar o usuário (a escolha da instituição externa).</li>
+</ul>
+<p><strong>Resumo da Ópera</strong></p>
+<p><strong>Criar usuário MNI</strong></p>
+<ul>
+<li>CPF válido de Servidor/Procurador/Promotor/Policial da instituição externa (somente um CPF);</li>
+<li>E-mail (recomenda-se que esse e-mail seja de pessoa ou lista de discussão ligada a área de desenvolvimento de sistemas da instituição externa, pois é para esse email que o PJe envia o link para definição e redefinição de senha).</li>
+</ul>
+<p><strong>Criar usuário Procurador/Gestor</strong></p>
+<ul>
+<li>CPF válido de Servidor/Procurador/Promotor/Policial da instituição externa;</li>
+<li>E-mail.</li>
+</ul>
+<p><strong>Criar usuário Servidor de Cartório</strong></p>
+<ul>
+<li>CPF válido de Servidor/Procurador/Promotor/Policial da instituição externa;</li>
+<li>Email;</li>
+<li>Número e nome da Zona Eleitoral na qual deseja-se lotar o usuário (a escolha da instituição externa).</li>
+</ul>
+<h4 id="criando-os-usuarios">Criando os Usuários</h4>
+<h4 id="criando-os-usuarios-no-ambiente-pje-de-treinamento-ead">Criando os Usuários no Ambiente PJe de Treinamento (EAD)</h4>
+<p>Criando os Usuários no Ambiente PJe de Treinamento (EAD)
+Para criar usuário em quaisquer dos ambientes de treinamento EAD, deve-se tão somente solicitar a criação dos usuários abrindo um chamado técnico no Service Desk do TSE.</p>
+<p>Pode-se utilizar os seguintes canais de atendimento:</p>
+<ul>
+<li>Central de Atendimento do TSE: enviar e-mail para 8800@tse.ju.br</li>
+<li>Catálogo de Serviços: acessar o endereço <a href="http://servicos.tse.jus.br/">http://servicos.tse.jus.br/</a></li>
+<li>Opção: Soluções Judiciais<ul>
+<li>Serviço: PJE - Interoperabilidade com Sistemas Externos</li>
+<li>Ação: Esclarecer Dúvidas</li>
+</ul>
+</li>
+</ul>
+<p>No corpo do e-mail ou no campo Descrição, informar os dados necessários para a criação dos usuários da instituição externa no PJe, de acordo com os campos a seguir:</p>
+<ul>
+<li>Solicitante: Nome da instituição externa</li>
+<li>Corpo do email ou campo descrição: informações detalhadas da solicitação<ul>
+<li>URL do PJe: informar a URL do sistema;</li>
+<li>Tipo da Solicitação: Criação de Usuário</li>
+<li>Dados de Cada Usuário:<ul>
+<li>CPF válido do usuário;</li>
+<li>Email do usuário;</li>
+<li>Perfil do usuário;</li>
+<li>Nome e número do Zana Eleitoral (SOMENTE se o perfil for Servidor de Cartório).</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="criando-os-usuarios-no-ambiente-pje-de-producao">Criando os Usuários no Ambiente PJe de Produção</h4>
+<p>Por motivos óbvios, a criação de usuários nos ambientes de produção do PJe requer um nível maior de segurança, controle e rastreabilidade. Em virtude disso, o cadastro de novos usuários nos ambientes de produção (1g, 2g e 3g), realiza-se seguindo o seguinte procedimento:</p>
+<ul>
+<li>Verificar se na própria instituição já tenham usuários cadastrados com o perfil de Procurador/Gestor, pois com esse perfil é possível o cadastro de novos usuários no Pje;</li>
+<li>Caso não existam usuários com o perfil mencionado no item anterior, encaminhar ofício a Presidência do TSE, com vistas a Assessoria do Processo Eletrônico (ASPJE), solicitando o cadastro dos novos usuários no PJe de Produção;</li>
+<li>Informar a instância desejada;</li>
+<li>Informar a URL do sistema PJe no qual deseja-se cadastrar os novos usuários;</li>
+<li>Para cada usuário, informar:<ul>
+<li>CPF válido;</li>
+<li>Email;</li>
+<li>Perfil desejado;</li>
+<li>Nome e número do Zana Eleitoral (SOMENTE se o perfil for Servidor de Cartório).</li>
+</ul>
+</li>
+</ul>
+<h4 id="acessando-o-pje">Acessando o PJe</h4>
+<p><strong>a) Acesso manual</strong></p>
+<p>O acesso ao PJe dá-se através de login e senha ou certificado digital A3 com token USB;</p>
+<p>O acesso manual ao PJe, via certificado digital A3 com token USB, não exige senha previamente cadastrada no sistema, exige-se apenas a senha do certificado digital do usuário.</p>
+<p><strong>b) Acesso via MNI</strong></p>
+<p>As operações a serem realizadas no PJe utilizando-se o protocolo MNI, via sistema da instituição externa, realizam-se APENAS através de login e senha (autenticação sistema → sistema). A senha a ser inserida no código-fonte do sistema da instituição externa deve ter sido previamente cadastrada no sistema PJe;</p>
+<p><strong>c) Definição e/ou alteração de senha</strong></p>
+<p>Quando uma senha está prestes a expirar, já expirou ou deseja-se alterá-la, deve-se redefinir a senha por meio do botão “Esqueci minha senha” na tela de login do PJe. Após essa solicitação, o PJe encaminha para o e-mail do usuário cadastrado, um link para a definição / redefinição de senha.</p>
+<h2 id="dia-a-dia-da-interoperabilidade">Dia a Dia da Interoperabilidade</h2>
+<h4 id="panorama-do-suporte">Panorama do Suporte</h4>
+<p>Atualmente o TSE atende pedidos de integração, suporte técnico, negocial ou gerencial de uma gama de instituições externas: Ministérios Públicos Federal e Estaduais de todo o Brasil, Tribunais Regionais Federais e Justiças Comuns, Polícias Civis, Polícia Federal, Procuradorias Regionais, Procuradorias da Fazenda, Advocacia Geral da União, Supremo Tribunal Federal.</p>
+<p>O PJe é composto por um conjunto de tecnologias
+ interdependentes e nas quais atuam equipes de diversos setores das áreas de tecnologia da informação e negocial do TSE, o que sempre demanda esforço investigativo conjunto na solução das questões técnicas e negociais afetas ao PJe.</p>
+<p>Dessa forma esperamos contar com a paciência, a boa vontade e a compreensão de todos na busca de soluções para cada instituição externa.</p>
+<h4 id="abertura-de-chamados-de-suporte-modelo-padrao">Abertura de Chamados de Suporte (Modelo Padrão)</h4>
+<p>Afim de facilitar o entendimento da solicitação de suporte e sua consequente solução por parte da equipe técnica, negocial ou gerencial do TSE, o Modelo de Abertura de Chamado de Suporte deverá seguido pelas instituições externas, quando solicitarem suporte para questões afetas a interoperabilidade entre os sistemas.</p>
+<p><strong>Modelo de Abertura de Chamado de Suporte</strong></p>
+<ul>
+<li>Solicitante: Nome da Instituição</li>
+<li>
+<p>Corpo do email: informações detalhadas da solicitação</p>
+<ul>
+<li>URL do PJe: Endereço do sistema</li>
+<li>URL do Webservice Intercomunicação: Endereço do webservice</li>
+<li>Natureza da Solicitação: [Gerencial, Técnica, Negocial]</li>
+<li>Tipo da Solicitação: [Erro, Dúvida, Sugestão de Melhoria]</li>
+<li>Descrição da Solicitação: Detalhamento da solicitação</li>
+</ul>
+</li>
+<li>
+<p>Anexar a(s) requisições e respostas XML(s) utilizadas(s) pelo sistema da instituição externa para auxiliar nas investigações.</p>
+</li>
+<li>
+<p>Anexar documentos e/ou imagens da tela contendo detalhes visuais da solicitação. Print da tela cheia.</p>
+</li>
+</ul>
+<p>Pode-se utilizar os seguintes canais de atendimento para registrar um chamado para o Suporte do PJe:</p>
+<ul>
+<li>
+<p>Central de Atendimento do TSE: enviar e-mail para 8800@tse.ju.br ou;</p>
+</li>
+<li>
+<p>Catálogo de Serviços: acessar o endereço <a href="http://servicos.tse.jus.br/">http://servicos.tse.jus.br/</a></p>
+<ul>
+<li>Opção: Soluções Judiciais</li>
+<li>Serviço: PJE - Interoperabilidade com Sistemas Externos</li>
+<li>Escolher uma ação: Erro/Falha, Esclarecer Dúvidas, Indisponível, Lentidão</li>
+</ul>
+</li>
+</ul>
+<p>Uma vez registrado o chamado no Service Desk, esse será designado para a área capacitada a resolver a solicitação: Gerencial, Infraestrutura, Desenvolvimento, Banco de Dados, Negocial etc.</p>
+<h4 id="resposta-do-usuario-ao-questionamento-do-suporte-do-pje">Resposta do Usuário ao Questionamento do Suporte do PJe</h4>
+<p>Por vezes, o Suporte do PJe necessita solicitar ao usuário do MNI, informações, documentos ou arquivos relevantes que auxiliem nas linhas de investigação de um chamado, podendo vir a auxiliar em sua solução.</p>
+<p>O Suporte do PJe faz então um questionamento via sistema de gerenciamento de chamados e um email com tal questionamento é enviado ao usuário, contendo esse email um link para resposta.</p>
+<p>Nem sempre o usuário consegue responder o questionamento ou enviar arquivos pelo link e nesse caso o usuário deverá abrir um novo chamado, utilizando-se dos mesmos canais mencionados no item anterior, informando o número do chamado o qual originou o questionamento e anexando as informações, documentos ou arquvivos solicitados.</p>
+<h4 id="documentacao-do-mni">Documentação do MNI</h4>
+<p>O MNI é um protocolo de comunicação desenvolvido e mantido pelo CNJ, cuja documentação por eles confeccionada, pode ser encontrada no endereço <a href="http://www.pje.jus.br/wiki/index.php/Tutorial_MNI">http://www.pje.jus.br/wiki/index.php/Tutorial_MNI</a>.</p>
+<p><strong>Observação:</strong> É a única documentação sobre o MNI disponibilizada pelo CNJ para consulta.</p>
+<h4 id="como-criar-expedientes">Como Criar Expedientes</h4>
+<p>Em linhas gerais os procedimentos necessários para criar expedientes no PJe são:</p>
+<ul>
+<li>Logar no PJe utilizando um usuário com o perfil de Servidor de Cartório;</li>
+<li>Usar a tarefa “Preparar Ato de Comunicação” para criar e enviar expedientes para o Ministério Público;</li>
+<li>O documento MNI - Enviar Expediente Para MPE.pdf é um guia geral para criação de expedientes. Apesar de ser um guia confeccionado visando o ambiente 3g e o perfil de usuário “Secretário Judiciário”, ele pode ser utilizado como um guia para o ambiente 1g devendo o usuário logado ter o perfil de Servidor de Cartório;</li>
+</ul>
+<h4 id="como-preparar-documentos-para-o-peticionamento-via-mni">Como Preparar Documentos Para o Peticionamento via MNI</h4>
+<p>Na operação do webservice de intercomunicação entregarManifestaçãoProcessual() as vezes é necessário enviar documentos, principalmente PDFs, durante o peticionamento de processos. Os procedimentos necessários para preparar tais documentos, suas respectivas assinaturas e certificados digitais são:</p>
+<ul>
+<li>Converter os documentos para a codificação Base64, a qual é um método para codificação de dados para transferência na Internet. É utilizado frequentemente para transmitir dados binários por meios de transmissões que lidam apenas com texto, como por exemplo para enviar arquivos anexos por e-mail;</li>
+<li>Assinar os documentos convertidos para a codificacao Base64 utilizando um algoritmo de hash SHA256withRSA;</li>
+<li>Para assinatura dos documentos em Base64, utilizar um certificado com uma cadeia de certificado A1 ou A3 da ICP Brasil;</li>
+<li>A cadeia de certificado deve estar por padrão no formato PEM;</li>
+<li>Cada documento a ser peticionado deve conter sua assinatura individual;</li>
+<li>A operação pode conter tantos documentos quanto forem necessários;</li>
+<li>O arquivo MNI - entregarManifestaçãoProcessual – DocumentoAssinado.xml contém exemplo de documento convertido para a Base64 e assinado digitalmente com o algoritmo hash SHA256withRSA. O formato XML desse arquivo deve ser seguido a risca, devendo-se reproduzir fielmente a estrutura, a nomenclatura e o nível das tags, sob pena de não conseguir-se peticionar o processo com sucesso.</li>
+</ul>
+<h4 id="tipos-de-eleicao">Tipos de Eleição</h4>
+<p>Na Justiça Eleitoral pode haver a ocorrência dos seguintes tipos de eleições, cujo código é utilizado na operação MNI entregarManifestaçãoProcessual(), por meio da tag JETipoEleição:</p>
+<ol>
+<li>Eleições Gerais</li>
+<li>Eleições Municipais</li>
+<li>Eleições Complementares</li>
+<li>Referendo</li>
+<li>Plebiscito</li>
+</ol>
+<h4 id="sigilo-processual">Sigilo Processual</h4>
+<p>Consideram-se sigilosos, os processos:</p>
+<ol>
+<li>
+<p>Que, por lei, tramitem em segredo de justiça;</p>
+</li>
+<li>
+<p>Que, em razão de decisão fundamentada da autoridade judicial competente, devam tramitar em segredo de justiça.</p>
+</li>
+</ol>
+<h4 id="niveis-de-sigilo-processual">Níveis de Sigilo Processual</h4>
+<h4 id="zona-eleitoral-niveis-1-3-e-5">Zona Eleitoral (níveis 1, 3 e 5)</h4>
+<p><strong>Nível 1 (Segredo de Justiça)</strong></p>
+<p>Visualização restrita aos serventuários da Zona Eleitoral, ao juiz eleitoral, ao polo ativo e seus representantes e aos membros do Ministério Público, como fiscal da lei. Nesse nível, tanto o serventuário que possui perfil de “servidor” quanto o serventuário que possui perfil de “servidor processamento” conseguirão visualizar o processo sigiloso. A expressão “representantes” contempla tanto os advogados quanto os defensores e/ou procuradores.</p>
+<p><strong>Resumo Nível 1:</strong></p>
+<ul>
+<li>Juiz eleitoral;</li>
+<li>Servidor e servidor de processamento;</li>
+<li>Polo ativo e seus representantes (advogados, defensores, procuradores);</li>
+<li>Membros do Ministério Público, como fiscal da lei.</li>
+</ul>
+<p><strong>Nível 3 (Sigilo Médio)</strong></p>
+<p>Visualização restrita aos serventuários da Zona Eleitoral que possuem perfil de “servidor”, ao juiz eleitoral, ao polo ativo e seus representantes. Mais uma vez, a expressão “representantes” contempla tanto os advogados quanto os defensores e/ou procuradores.</p>
+<p><strong>Resumo Nível 3:</strong></p>
+<ul>
+<li>Juiz eleitoral;</li>
+<li>Servidor;</li>
+<li>Polo ativo e seus representantes (advogados, defensores, procuradores);</li>
+</ul>
+<p><strong>Observação:</strong> No nível 3, caso necessário, o magistrado poderá atribuir visualização no processo ao polo passivo e aos membros do Ministério Público.</p>
+<p><strong>Nível 5 (Sigilo Absoluto)</strong></p>
+<p>Visualização restrita ao magistrado, polo ativo e seus representantes.</p>
+<p><strong>Resumo Nível 5:</strong></p>
+<ul>
+<li>Juiz eleitoral;</li>
+<li>Polo ativo e seus representantes (advogados, defensores, procuradores);</li>
+</ul>
+<p><strong>Observação:</strong> No nível 5, caso necessário, o magistrado poderá atribuir visualização no processo ao polo passivo e aos membros do Ministério Público.</p>
+<h4 id="tribunais-regionais-eleitorais-e-tribunal-superior-eleitoral-niveis-1-3-4-e-5">Tribunais Regionais Eleitorais e Tribunal Superior Eleitoral (níveis 1, 3, 4 e 5)</h4>
+<p><strong>Nível 1 (Segredo de Justiça)</strong></p>
+<p>Visualização restrita aos serventuários da Zona Eleitoral, ao juiz eleitoral, ao polo ativo e seus representantes e aos membros do Ministério Público, como fiscal da lei. Nesse nível, tanto o serventuário que possui perfil de “servidor” quanto o serventuário que possui perfil de “servidor processamento” conseguirão visualizar o processo sigiloso. A expressão “representantes” contempla tanto os advogados quanto os defensores e/ou procuradores.</p>
+<p><strong>Resumo Nível 1:</strong></p>
+<ul>
+<li>Juiz eleitoral;</li>
+<li>Servidor e servidor de processamento;</li>
+<li>Polo ativo e seus representantes (advogados, defensores, procuradores);</li>
+<li>Membros do Ministério Público, como fiscal da lei.</li>
+</ul>
+<p><strong>Nível 3 (Sigilo Médio)</strong></p>
+<p>Visualização restrita aos serventuários da Zona Eleitoral que possuem perfil de “servidor”, ao juiz eleitoral, ao polo ativo e seus representantes. Mais uma vez, a expressão “representantes” contempla tanto os advogados quanto os defensores e/ou procuradores.</p>
+<p><strong>Resumo Nível 3:</strong></p>
+<ul>
+<li>Juiz eleitoral;</li>
+<li>Servidor;</li>
+<li>Polo ativo e seus representantes (advogados, defensores, procuradores);</li>
+</ul>
+<p><strong>Observação:</strong> No nível 3, caso necessário, o magistrado poderá atribuir visualização no processo ao polo passivo e aos membros do Ministério Público.</p>
+<p><strong>Nível 4 (Sigilo Intenso)</strong></p>
+<p>Visualização restrita ao Magistrado, Secretário Judiciário, ao Secretário da Corregedoria, aos Assessores-Chefes dos Gabinetes e ao Assessor-Chefe de Plenário.</p>
+<p><strong>Resumo Nível 4:</strong></p>
+<ul>
+<li>Magistrado;</li>
+<li>Secretário Judiciário;</li>
+<li>Secretário da Corregedoria</li>
+<li>Assessores-Chefes dos Gabinetes</li>
+<li>Assessor-Chefe de Plenário</li>
+</ul>
+<p><strong>Nível 5 (Sigilo Absoluto)</strong></p>
+<p>Visualização restrita ao magistrado, polo ativo e seus representantes.</p>
+<p><strong>Resumo Nível 5:</strong></p>
+<ul>
+<li>Juiz eleitoral;</li>
+<li>Polo ativo e seus representantes (advogados, defensores, procuradores);</li>
+</ul>
+<p><strong>Observação:</strong> No nível 5, caso necessário, o magistrado poderá atribuir visualização no processo a servidores, ao polo passivo e aos membros do Ministério Público.</p>
+<h4 id="recomendacoes">Recomendações</h4>
+<p>Para fins de testes de interoperabilidade, recomendamos o uso da ferramenta SoapUI para a realização de requisições XML. A ferramenta é gratuita.</p>
+<h2 id="anexos">Anexos</h2>
+<h4 id="exemplos-de-requisicoes-xml-intercomunicacao"><li>Exemplos de Requisições XML - Intercomunicação</li></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Destinatário</th>
+<th align="center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TODOS</td>
+<td align="center"><a href="\anexos\Intercomunicacao - Exemplos.zip">Exemplos de Requisições XML - Intercomunicação</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="exemplos-de-requisicoes-xml-consultapje"><li>Exemplos de Requisições XML - ConsultaPJe</li></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Destinatário</th>
+<th align="center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TODOS</td>
+<td align="center"><a href="\anexos\ConsultaPJe - Exemplos.zip">Exemplos de Requisições XML - ConsultaPJe</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="exemplo-de-requisicao-xml-documento-assinado-para-entrega-avulsa"><li>Exemplo de Requisição XML - Documento Assinado Para Entrega Avulsa</li></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Destinatário</th>
+<th align="center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TODOS</td>
+<td align="center"><a href="\anexos\entregarManifestaçãoProcessual – DocumentoAssinado.xml">Exemplo de Requisição XML - Documentos Assinados</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="guia-enviar-expediente-para-mpepdf"><li>Guia Enviar Expediente Para MPE.pdf</li></h4>
+<table>
+<thead>
+<tr>
+<th align="center">Destinatário</th>
+<th align="center">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TODOS</td>
+<td align="center"><a href="\anexos\Guia Enviar Expediente Para MPE.pdf">Guia Enviar Expediente Para MPE.pdf</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="enderecos-dos-ambientes-do-pje-1g-2g-e-3g-producao"><li>Endereços dos Ambientes do PJe 1g, 2g e 3g – Produção</li></h4>
+<p><strong>1º grau (Zonas Eleitorais)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">1º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ZE</td>
+<td align="center"><a href="https://pje1g.tse.jus.br/pje/login.seam">https://pje1g.tse.jus.br/pje/login.seam</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2º grau (Tribunais Regionais Eleitorais)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">2º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TRE-AC</td>
+<td align="center"><a href="https://pje.tre-ac.jus.br/pje/login.seam">https://pje.tre-ac.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AL</td>
+<td align="center"><a href="https://pje.tre-al.jus.br/pje/login.seam">https://pje.tre-al.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AM</td>
+<td align="center"><a href="https://pje.tre-am.jus.br/pje/login.seam">https://pje.tre-am.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AP</td>
+<td align="center"><a href="https://pje.tre-ap.jus.br/pje/login.seam">https://pje.tre-ap.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-BA</td>
+<td align="center"><a href="https://pje.tre-ba.jus.br/pje/login.seam">https://pje.tre-ba.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-CE</td>
+<td align="center"><a href="https://pje.tre-ce.jus.br/pje/login.seam">https://pje.tre-ce.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-DF</td>
+<td align="center"><a href="https://pje.tre-df.jus.br/pje/login.seam">https://pje.tre-df.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-ES</td>
+<td align="center"><a href="https://pje.tre-es.jus.br/pje/login.seam">https://pje.tre-es.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-GO</td>
+<td align="center"><a href="https://pje.tre-go.jus.br/pje/login.seam">https://pje.tre-go.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MA</td>
+<td align="center"><a href="https://pje.tre-ma.jus.br/pje/login.seam">https://pje.tre-ma.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MG</td>
+<td align="center"><a href="https://pje.tre-mg.jus.br/pje/login.seam">https://pje.tre-mg.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MS</td>
+<td align="center"><a href="https://pje.tre-ms.jus.br/pje/login.seam">https://pje.tre-ms.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MT</td>
+<td align="center"><a href="https://pje.tre-mt.jus.br/pje/login.seam">https://pje.tre-mt.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PA</td>
+<td align="center"><a href="https://pje.tre-pa.jus.br/pje/login.seam">https://pje.tre-pa.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PB</td>
+<td align="center"><a href="https://pje.tre-pb.jus.br/pje/login.seam">https://pje.tre-pb.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PE</td>
+<td align="center"><a href="https://pje.tre-pe.jus.br/pje/login.seam">https://pje.tre-pe.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PI</td>
+<td align="center"><a href="https://pje.tre-pi.jus.br/pje/login.seam">https://pje.tre-pi.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PR</td>
+<td align="center"><a href="https://pje.tre-pr.jus.br/pje/login.seam">https://pje.tre-pr.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RJ</td>
+<td align="center"><a href="https://pje.tre-rj.jus.br/pje/login.seam">https://pje.tre-rj.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RN</td>
+<td align="center"><a href="https://pje.tre-rn.jus.br/pje/login.seam">https://pje.tre-rn.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RO</td>
+<td align="center"><a href="https://pje.tre-ro.jus.br/pje/login.seam">https://pje.tre-ro.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RR</td>
+<td align="center"><a href="https://pje.tre-rr.jus.br/pje/login.seam">https://pje.tre-rr.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RS</td>
+<td align="center"><a href="https://pje.tre-rs.jus.br/pje/login.seam">https://pje.tre-rs.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SC</td>
+<td align="center"><a href="https://pje.tre-sc.jus.br/pje/login.seam">https://pje.tre-sc.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SE</td>
+<td align="center"><a href="https://pje.tre-se.jus.br/pje/login.seam">https://pje.tre-se.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SP</td>
+<td align="center"><a href="https://pje.tre-sp.jus.br/pje/login.seam">https://pje.tre-sp.jus.br/pje/login.seam</a></td>
+</tr>
+<tr>
+<td align="center">TRE-TO</td>
+<td align="center"><a href="https://pje.tre-to.jus.br/pje/login.seam">https://pje.tre-to.jus.br/pje/login.seam</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>3º grau (TSE)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">3º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TSE</td>
+<td align="center"><a href="https://pje.tse.jus.br/pje/login.seam">https://pje.tse.jus.br/pje/login.seam</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="enderecos-dos-webservices-intercomunicacao-producao"><li>Endereços dos Webservices Intercomunicação – Produção</li></h4>
+<p><strong>1º grau (Zonas Eleitorais)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">1º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ZE</td>
+<td align="center"><a href="https://pje1g.tse.jus.br/pje/intercomunicacao?wsdl">https://pje1g.tse.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2º grau (Tribunais Regionais Eleitorais)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">2º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TRE-AC</td>
+<td align="center"><a href="https://pje.tre-ac.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-ac.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AL</td>
+<td align="center"><a href="https://pje.tre-al.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-al.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AM</td>
+<td align="center"><a href="https://pje.tre-am.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-am.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AP</td>
+<td align="center"><a href="https://pje.tre-ap.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-ap.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-BA</td>
+<td align="center"><a href="https://pje.tre-ba.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-ba.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-CE</td>
+<td align="center"><a href="https://pje.tre-ce.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-ce.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-DF</td>
+<td align="center"><a href="https://pje.tre-df.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-df.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-ES</td>
+<td align="center"><a href="https://pje.tre-es.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-es.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-GO</td>
+<td align="center"><a href="https://pje.tre-go.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-go.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MA</td>
+<td align="center"><a href="https://pje.tre-ma.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-ma.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MG</td>
+<td align="center"><a href="https://pje.tre-mg.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-mg.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MS</td>
+<td align="center"><a href="https://pje.tre-ms.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-ms.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MT</td>
+<td align="center"><a href="https://pje.tre-mt.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-mt.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PA</td>
+<td align="center"><a href="https://pje.tre-pa.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-pa.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PB</td>
+<td align="center"><a href="https://pje.tre-pb.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-pb.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PE</td>
+<td align="center"><a href="https://pje.tre-pe.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-pe.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PI</td>
+<td align="center"><a href="https://pje.tre-pi.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-pi.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PR</td>
+<td align="center"><a href="https://pje.tre-pr.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-pr.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RJ</td>
+<td align="center"><a href="https://pje.tre-rj.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-rj.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RN</td>
+<td align="center"><a href="https://pje.tre-rn.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-rn.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RO</td>
+<td align="center"><a href="https://pje.tre-ro.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-ro.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RR</td>
+<td align="center"><a href="https://pje.tre-rr.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-rr.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RS</td>
+<td align="center"><a href="https://pje.tre-rs.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-rs.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SC</td>
+<td align="center"><a href="https://pje.tre-sc.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-sc.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SE</td>
+<td align="center"><a href="https://pje.tre-se.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-se.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SP</td>
+<td align="center"><a href="https://pje.tre-sp.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-sp.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-TO</td>
+<td align="center"><a href="https://pje.tre-to.jus.br/pje/intercomunicacao?wsdl">https://pje.tre-to.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>3º grau (TSE)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">3º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TSE</td>
+<td align="center"><a href="https://pje.tse.jus.br/pje/intercomunicacao?wsdl">https://pje.tse.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="enderecos-dos-webservices-consultapje-producao"><li>Endereços dos Webservices ConsultaPJe – Produção</li></h4>
+<p><strong>1º grau (Zonas Eleitorais)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">1º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ZE</td>
+<td align="center"><a href="https://pje1g.tse.jus.br/pje/ConsultaPJe?wsdl">https://pje1g.tse.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>2º grau (Tribunais Regionais Eleitorais)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">2º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TRE-AC</td>
+<td align="center"><a href="https://pje.tre-ac.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-ac.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AL</td>
+<td align="center"><a href="https://pje.tre-al.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-al.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AM</td>
+<td align="center"><a href="https://pje.tre-am.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-am.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-AP</td>
+<td align="center"><a href="https://pje.tre-ap.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-ap.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-BA</td>
+<td align="center"><a href="https://pje.tre-ba.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-ba.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-CE</td>
+<td align="center"><a href="https://pje.tre-ce.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-ce.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-DF</td>
+<td align="center"><a href="https://pje.tre-df.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-df.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-ES</td>
+<td align="center"><a href="https://pje.tre-es.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-es.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-GO</td>
+<td align="center"><a href="https://pje.tre-go.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-go.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MA</td>
+<td align="center"><a href="https://pje.tre-ma.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-ma.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MG</td>
+<td align="center"><a href="https://pje.tre-mg.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-mg.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MS</td>
+<td align="center"><a href="https://pje.tre-ms.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-ms.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-MT</td>
+<td align="center"><a href="https://pje.tre-mt.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-mt.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PA</td>
+<td align="center"><a href="https://pje.tre-pa.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-pa.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PB</td>
+<td align="center"><a href="https://pje.tre-pb.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-pb.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PE</td>
+<td align="center"><a href="https://pje.tre-pe.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-pe.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PI</td>
+<td align="center"><a href="https://pje.tre-pi.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-pi.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-PR</td>
+<td align="center"><a href="https://pje.tre-pr.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-pr.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RJ</td>
+<td align="center"><a href="https://pje.tre-rj.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-rj.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RN</td>
+<td align="center"><a href="https://pje.tre-rn.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-rn.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RO</td>
+<td align="center"><a href="https://pje.tre-ro.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-ro.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RR</td>
+<td align="center"><a href="https://pje.tre-rr.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-rr.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-RS</td>
+<td align="center"><a href="https://pje.tre-rs.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-rs.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SC</td>
+<td align="center"><a href="https://pje.tre-sc.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-sc.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SE</td>
+<td align="center"><a href="https://pje.tre-se.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-se.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-SP</td>
+<td align="center"><a href="https://pje.tre-sp.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-sp.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+<tr>
+<td align="center">TRE-TO</td>
+<td align="center"><a href="https://pje.tre-to.jus.br/pje/ConsultaPJe?wsdl">https://pje.tre-to.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>3º grau (TSE)</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">3º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TSE</td>
+<td align="center"><a href="https://pje.tse.jus.br/pje/ConsultaPJe?wsdl">https://pje.tse.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="enderecos-do-ambiente-e-webservices-pje-1g-ead"><li>Endereços do Ambiente e Webservices PJe 1g – EAD</li></h4>
+<p><strong>Endereço do Ambiente</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">1º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ZE</td>
+<td align="center"><a href="https://pje1g-ead.tse.jus.br/pje/login.seam">https://pje1g-ead.tse.jus.br/pje/login.seam</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Endereço do Webservice Intercomunicação</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">1º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ZE</td>
+<td align="center"><a href="https://pje1g-ead.tse.jus.br/pje/intercomunicacao?wsdl">https://pje1g-ead.tse.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Endereço do Webservice ConsultaPJe</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">1º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">ZE</td>
+<td align="center"><a href="https://pje1g-ead.tse.jus.br/pje/ConsultaPJe?wsdl">https://pje1g-ead.tse.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="enderecos-do-ambiente-e-webservices-pje-2g-ead"><li>Endereços do Ambiente e Webservices PJe 2g – EAD</li></h4>
+<p><strong>Endereço do Ambiente</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">2º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TRE</td>
+<td align="center"><a href="https://pje2g-ead.tse.jus.br/pje/login.seam">https://pje2g-ead.tse.jus.br/pje/login.seam</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Endereço do Webservice Intercomunicação</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">2º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TRE</td>
+<td align="center"><a href="https://pje2g-ead.tse.jus.br/pje/intercomunicacao?wsdl">https://pje2g-ead.tse.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Endereço do Webservice ConsultaPJe</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">2º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TRE</td>
+<td align="center"><a href="https://pje2g-ead.tse.jus.br/pje/ConsultaPJe?wsdl">https://pje2g-ead.tse.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="enderecos-do-ambiente-e-webservices-pje-3g-ead"><li>Endereços do Ambiente e Webservices PJe 3g – EAD</li></h4>
+<p><strong>Endereço do Ambiente</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">3º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TSE</td>
+<td align="center"><a href="https://pje3g-ead.tse.jus.br/pje/login.seam">https://pje3g-ead.tse.jus.br/pje/login.seam</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Endereço do Webservice Intercomunicação</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">3º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TSE</td>
+<td align="center"><a href="https://pje3g-ead.tse.jus.br/pje/intercomunicacao?wsdl">https://pje3g-ead.tse.jus.br/pje/intercomunicacao?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Endereço do Webservice ConsultaPJe</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">3º grau</th>
+<th align="center">Endereço</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TSE</td>
+<td align="center"><a href="https://pje3g-ead.tse.jus.br/pje/ConsultaPJe?wsdl">https://pje3g-ead.tse.jus.br/pje/ConsultaPJe?wsdl</a></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme_extra.js" defer></script>
+    <script src="js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js" defer></script>
+      <script src="js/config.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.2.3
+Build Date UTC : 2021-10-18 20:39:20.037774+00:00
+-->
