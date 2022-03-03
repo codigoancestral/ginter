@@ -1,2 +1,2 @@
 # Ginter
-Guia de Interoperabilidade das Instituições Externas e o PJe da Justiça Eleitoral
+Guia de Interoperabilidade das Instituições Externas com o PJe da Justiça Eleitoral
